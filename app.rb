@@ -14,4 +14,3 @@ get('/triangles') do
   @triangle=Triangle.new(a_side, b_side, c_side)
   erb(:triangles)
   end
-end
