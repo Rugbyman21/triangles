@@ -1,0 +1,15 @@
+<h1>Your triangle is:</h1>
+
+<% if @triangle.equalateral?() %>
+  <h3>You have an equalateral triangle!</h3>
+
+<% if @triangle.isosceles?() %>
+  <h3>You have an equalateral triangle!</h3>
+
+<% if @triangle.scalene?() %>
+  <h3>You have an equalateral triangle!</h3>
+
+<% else %>
+  <h3>Your sides do not make a triangle</h3>
+
+<% end %>

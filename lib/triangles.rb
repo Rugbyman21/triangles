@@ -28,4 +28,12 @@ class Triangle
       "This is not an isosceles triangle"
     end
   end
+
+  define_method(:scalene?) do
+    if @a_side != @b_side && @b_side != @c_side
+      "This is a scalene triangle"
+    else
+      "This is not a scalene triangle"
+    end
+  end
 end
