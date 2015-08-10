@@ -8,4 +8,13 @@ describe(Triangle) do
       expect(test_triangle.sides?()).to(eq(false))
     end
   end
+
+  describe("#equalateral?") do
+    it("returns true if all sides are equal") do
+      test_triangle = Triangle.new(10, 10, 10)
+      expect(test_triangle.equalateral?()).to(eq("This is an equalateral triangle"))
+    end
+  end
+
+
 end
