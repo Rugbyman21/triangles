@@ -6,11 +6,7 @@ class Triangle
   end
 
   define_method(:sides?) do
-    if @a_side + @b_side > @c_side
-      true
-    elsif @a_side + @c_side > @b_side
-      true
-    elsif @b_side + @c_side > @a_side
+    if @a_side + @b_side > @c_side && @a_side + @c_side > @b_side && @b_side + @c_side > @a_side
       true
     else
       false
