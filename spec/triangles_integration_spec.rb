@@ -1,6 +1,6 @@
 require('capybara/rspec')
 require('./app')
-Capybara.app=Sinatra::Application
+Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
 describe('the main page where side lenghts are inputed by the user', {:type => :feature}) do
